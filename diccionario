@@ -1,0 +1,33 @@
+import time
+
+meme_dict = {
+    "LOL": "Una respuesta común a algo gracioso",
+    "CRINGE": "Algo excepcionalmente raro o embarazoso",
+    "ROFL": "Una respuesta a una broma (rodar por el suelo de la risa)",
+    "SHEESH": "Expresión de sorpresa o ligera desaprobación",
+    "CREEPY": "Algo aterrador o siniestro",
+    "AGGRO": "Ponerse agresivo o enojado de repente"
+}
+
+print("============================================")
+print("  Bienvenido al Diccionario de Jerga Moderna  ")
+print("============================================")
+print("Te ayudaremos a entender las palabras que usan los jóvenes hoy en día.")
+print(" ")
+
+for i in range(5):
+    print("--- Consulta {} de 5 ---".format(i + 1))
+    
+    word = input("Escribe una palabra que no entiendas: ").strip().upper()
+    
+    if word in meme_dict:
+        print("Significado de '" + word + "': " + meme_dict[word])
+    else:
+        print("Lo sentimos, la palabra '" + word + "' aún no está en nuestro diccionario.")
+    
+    print(" ")
+    time.sleep(1)
+
+print("============================================")
+print("¡Gracias por usar el Diccionario Moderno! Hasta la próxima.")
+print("============================================")
